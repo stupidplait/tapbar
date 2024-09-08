@@ -5,7 +5,7 @@ export const Main: FC = () => {
     return (
         <main className={s.content}>
             {
-                Array.from({ length: 5 }, (_, i) => (
+                Array.from({ length: 10 }, (_, i) => (
                     <section key={i} className={s.block}>
                         <div className="container">
                             <div className={s.inner}>{i + 1}</div>
