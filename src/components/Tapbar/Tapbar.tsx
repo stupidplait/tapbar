@@ -43,7 +43,7 @@ export const Tapbar: FC = () => {
         };
 
         const handleScroll = () => {
-            if (Math.abs(scrollY - lastScroll) > 200) setLastScroll(scrollY);
+            if (Math.abs(scrollY - lastScroll) > 200 || scrollY <= lastScroll) setLastScroll(scrollY);
             if (scrollY - lastScroll > 200) setIsHidden(true);
             else if (scrollY <= lastScroll) setIsHidden(false);
         };
